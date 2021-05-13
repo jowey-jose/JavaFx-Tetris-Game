@@ -1,4 +1,4 @@
-package com.quirko.events;
+package com.quirko.event;
 
 public final class MoveEvent {
     private final EventType eventType;

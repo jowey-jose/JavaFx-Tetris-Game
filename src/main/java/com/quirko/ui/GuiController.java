@@ -2,7 +2,7 @@ package com.quirko.ui;
 
 import com.quirko.component.DownData;
 import com.quirko.component.ViewData;
-import com.quirko.events.*;
+import com.quirko.event.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.beans.property.BooleanProperty;

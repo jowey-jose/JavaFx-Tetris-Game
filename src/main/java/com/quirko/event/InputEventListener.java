@@ -1,4 +1,4 @@
-package com.quirko.events;
+package com.quirko.event;
 
 import com.quirko.component.ViewData;
 import com.quirko.component.DownData;

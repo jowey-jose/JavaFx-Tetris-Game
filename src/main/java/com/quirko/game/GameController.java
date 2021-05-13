@@ -2,9 +2,9 @@ package com.quirko.game;
 
 import com.quirko.ui.GuiController;
 import com.quirko.component.*;
-import com.quirko.events.EventSource;
-import com.quirko.events.InputEventListener;
-import com.quirko.events.MoveEvent;
+import com.quirko.event.EventSource;
+import com.quirko.event.InputEventListener;
+import com.quirko.event.MoveEvent;
 
 public class GameController implements InputEventListener {
 
