@@ -1,5 +1,6 @@
 .root {
-    -fx-background-image: url("background_image.png");
+    -fx-background-image: url("./images/6.jpg");
+    -fx-background-size: cover;
 }
 
 .nextBrick {
@@ -69,4 +70,14 @@
     -fx-font-size: 38;
     -fx-fill: yellow;
     -fx-text-fill: yellow;
+}
+
+.title {
+    -fx-fill: white;
+    -fx-font-family: 'Orbitron';
+    -fx-font-size: 32px;
+    -fx-font-weight: 900;
+    -fx-border-color: black;
+    -fx-stroke: black;
+    -fx-effect: dropshadow(gaussian, black, 1, 1.0, 1, 1);
 }
