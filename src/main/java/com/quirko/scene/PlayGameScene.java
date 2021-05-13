@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Main extends Application {
+public class PlayGameScene extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {

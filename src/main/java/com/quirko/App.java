@@ -17,12 +17,12 @@ public class App extends Application {
     /**
      * Base resolution width
      */
-    private final int width = 400;
+    private final int width = 800;
 
     /**
      * Base resolution height
      */
-    private final int height = 510;
+    private final int height = 600;
 
     private static App instance;
     private static final Logger logger = LogManager.getLogger(App.class);

@@ -15,16 +15,16 @@
         </center>
     </BorderPane>
 
-    <VBox layoutX="243" layoutY="20" alignment="CENTER" styleClass="vbox">
+    <VBox layoutX="643" layoutY="20" alignment="CENTER" styleClass="vbox">
         <VBox alignment="CENTER">
             <Label text="Score:" styleClass="scoreClass"/>
             <Text text="Text" fx:id="scoreValue" styleClass="scoreClass"/>
         </VBox>
         <VBox alignment="CENTER">
-            <Label text="Next brick" styleClass="nextBrickLabel"/>
-            <BorderPane styleClass="nextBrick" prefWidth="100" prefHeight="70" maxWidth="100">
+            <Label text="Next Piece" styleClass="nextPieceLabel"/>
+            <BorderPane styleClass="nextPiece" prefWidth="100" prefHeight="70" maxWidth="100">
                 <center>
-                    <GridPane fx:id="nextBrick" alignment="CENTER" hgap="1" vgap="1"/>
+                    <GridPane fx:id="nextPiece" alignment="CENTER" hgap="1" vgap="1"/>
                 </center>
             </BorderPane>
         </VBox>

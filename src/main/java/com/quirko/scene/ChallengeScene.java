@@ -37,20 +37,20 @@ public class ChallengeScene extends BaseScene {
 
         root = new GamePane(gameWindow.getWidth(),gameWindow.getHeight());
 
-        var challengePane = new StackPane();
-        challengePane.setMaxWidth(gameWindow.getWidth());
-        challengePane.setMaxHeight(gameWindow.getHeight());
-        challengePane.getStyleClass().add("menu-background");
-        root.getChildren().add(challengePane);
-
-        var mainPane = new BorderPane();
-        challengePane.getChildren().add(mainPane);
-
-        var board = new GameBoard(game.getGrid(),gameWindow.getWidth()/2,gameWindow.getWidth()/2);
-        mainPane.setCenter(board);
-
-        //Handle block on gameboard grid being clicked
-        board.setOnBlockClick(this::blockClicked);
+//        var challengePane = new StackPane();
+//        challengePane.setMaxWidth(gameWindow.getWidth());
+//        challengePane.setMaxHeight(gameWindow.getHeight());
+//        challengePane.getStyleClass().add("menu-background");
+//        root.getChildren().add(challengePane);
+//
+//        var mainPane = new BorderPane();
+//        challengePane.getChildren().add(mainPane);
+//
+//        var board = new GameBoard(game.getGrid(),gameWindow.getWidth()/2,gameWindow.getWidth()/2);
+//        mainPane.setCenter(board);
+//
+//        //Handle block on gameboard grid being clicked
+//        board.setOnBlockClick(this::blockClicked);
     }
 
     /**

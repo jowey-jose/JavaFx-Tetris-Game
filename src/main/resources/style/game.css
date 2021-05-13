@@ -23,7 +23,7 @@
 .menuItem {
     -fx-fill: white;
     -fx-font-family: 'Orbitron';
-    -fx-font-size: 32px;
+    -fx-font-size: 20px;
     -fx-font-weight: 700;
     -fx-border-color: black;
     -fx-stroke: black;
@@ -51,7 +51,7 @@
 .title {
     -fx-fill: white;
     -fx-font-family: 'Orbitron';
-    -fx-font-size: 32px;
+    -fx-font-size: 25px;
     -fx-font-weight: 900;
     -fx-border-color: black;
     -fx-stroke: black;

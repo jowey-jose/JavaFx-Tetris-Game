@@ -1,9 +1,11 @@
 package com.quirko.scene;
 
 import javafx.event.ActionEvent;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.quirko.ui.GamePane;
@@ -16,7 +18,7 @@ import com.quirko.ui.GameWindow;
 public class MenuScene extends BaseScene {
 
     private static final Logger logger = LogManager.getLogger(MenuScene.class);
-
+    private PlayGameScene playGameScene;
     /**
      * Create a new menu scene
      * @param gameWindow the Game Window this will be displayed in
@@ -49,12 +51,27 @@ public class MenuScene extends BaseScene {
         title.getStyleClass().add("title");
         mainPane.setTop(title);
 
+        var vBox = new VBox();
+
         //For now, let us just add a button that starts the game. I'm sure you'll do something way better.
-        var button = new Button("Play");
-        mainPane.setCenter(button);
+        var button1 = new Button("Play");
+        var button2 = new Button("Instructions");
+        var button3 = new Button("Lobby");
+
+        vBox.getChildren().add(button1);
+        vBox.getChildren().add(button2);
+        vBox.getChildren().add(button3);
+
+        vBox.setAlignment(Pos.CENTER);
+        vBox.setSpacing(50);
+        mainPane.setCenter(vBox);
 
         //Bind the button action to the startGame method in the menu
-        button.setOnAction(this::startGame);
+
+        button1.setOnAction(this::startGame) ;
+        button2.setOnAction(this::startInstruction) ;
+
+
     }
 
     /**
@@ -69,8 +86,17 @@ public class MenuScene extends BaseScene {
      * Handle when the Start Game button is pressed
      * @param event event
      */
-    private void startGame(ActionEvent event) {
+    public void startGame(ActionEvent event) {
         gameWindow.startChallenge();
     }
+
+    /**
+     * Handle when the Start Instruction button is pressed
+     * @param event event
+     */
+    public void startInstruction(ActionEvent event) {
+        gameWindow.startInstructions();
+    }
+
 
 }
