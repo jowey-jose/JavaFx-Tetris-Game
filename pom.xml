@@ -76,7 +76,7 @@
                                     <shadedArtifactAttached>true</shadedArtifactAttached>
                                     <transformers>
                                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                            <mainClass>package com.quirko.Launcher</mainClass>
+                                            <mainClass>package com.tetrecs.Launcher</mainClass>
                                         </transformer>
                                     </transformers>
                                 </configuration>
@@ -143,7 +143,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.5</version>
                 <configuration>
-                    <mainClass>package com.quirko.App</mainClass>
+                    <mainClass>package com.tetrecs.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>

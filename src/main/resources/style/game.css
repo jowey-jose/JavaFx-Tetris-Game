@@ -11,6 +11,12 @@
     -fx-background-size: cover;
 }
 
+.instructions-background{
+    -fx-background-image: url("../images/Instructions.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
 .challenge-background {
     -fx-background-image: url("../images/2.jpg");
     -fx-background-size: cover;
